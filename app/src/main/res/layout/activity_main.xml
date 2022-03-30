@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/get_city_id"
+        android:layout_marginLeft="10dp"
+        android:text="Get city id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/get_by_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/get_city_id"
+        android:text="get by id">
+
+    </Button>
+    <Button
+        android:id="@+id/get_by_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/get_by_id"
+        android:layout_marginLeft="10dp"
+        android:text="Get By Name">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_by_id"
+        android:layout_marginTop="7dp"
+        android:hint="Enter your text">
+
+    </EditText>
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_below="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black">
+
+    </TextView>
+    <ListView
+        android:id="@+id/ls"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_id"
+        android:listSelector="@color/teal_700"
+        android:divider="@color/black"
+        android:dividerHeight="3dp">
+
+    </ListView>
+
+
+</RelativeLayout>
